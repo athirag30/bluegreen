@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "athira/blue-green-node:latest"
+        DOCKER_IMAGE = "athira12/blue-green-node:latest"
         BLUE = "docker-compose-blue.yml"
         GREEN = "docker-compose-green.yml"
     }
