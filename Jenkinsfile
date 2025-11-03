@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/athirag30/bluegreen.git'
+                git branch: 'master', url: 'https://github.com/athirag30/bluegreen.git'
             }
         }
 
