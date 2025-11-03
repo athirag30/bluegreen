@@ -1,0 +1,7 @@
+version: "3"
+services:
+  app:
+    image: athira12/blue-green-node:latest
+    container_name: blue-app
+    ports:
+      - "3001:3000"
