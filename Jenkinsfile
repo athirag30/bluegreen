@@ -17,7 +17,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("${DOCKERHUB_USER}/${APP_NAME}:${BUILD_NUMBER}")
+                   def dockerImage = docker.build("${DOCKERHUB_USER}/${APP_NAME}:${BUILD_NUMBER}")
                 }
             }
         }
